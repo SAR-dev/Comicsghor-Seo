@@ -1,8 +1,5 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_4b8bef20edde04f98d3f.js",
-    "static/development/dll/dll_4b8bef20edde04f98d3f.js.map"
-  ],
+  "devFiles": [],
   "pages": {
     "/_app": [
       "static/runtime/webpack.js",
@@ -16,18 +13,6 @@
     "/_polyfills": [
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
-    ],
-    "/blogs": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
-    ],
-    "/user/crud/blogs": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
     ]
   }
 }

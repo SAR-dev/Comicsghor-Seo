@@ -9,6 +9,7 @@ import moment from 'moment';
 import SmallCard from '../../components/blog/SmallCard';
 import Img from 'react-image';
 import Lightbox from 'react-image-lightbox';
+import DisqusThread from '../../components/DisqusThread';
 
 import { Grid, Row, Col, Loader, Icon, TagGroup, Tag } from 'rsuite';
 
@@ -88,6 +89,14 @@ const SingleBlog = ({ blog, query }) => {
 		return;
 	};
 
+	const showComments = () => {
+		return (
+			<div>
+				<DisqusThread id={blog.id} title={blog.title} patha={`/blog/${blog.slug}`} />
+			</div>
+		)
+	}
+
 	return (
 		<React.Fragment>
 			{head()}
@@ -158,6 +167,9 @@ const SingleBlog = ({ blog, query }) => {
 
 									<Col xs={5}>{showRelatedBlog()}</Col>
 								</Row>
+								<div className="container">
+									{showComments()}
+								</div>
 							</Grid>
 						</div>
 					</article>

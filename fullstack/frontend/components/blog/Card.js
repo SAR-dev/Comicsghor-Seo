@@ -62,7 +62,9 @@ const Card = ({ blog }) => {
 				<Grid fluid>
 					<Row className="show-grid">
 						<Col xs={12}>
-							<div className="blog-excerpt">{renderHTML(blog.excerpt)}</div>
+							<div className="blog-excerpt">
+								{renderHTML(blog.excerpt)}
+							</div>
 						</Col>
 						<Col xs={12} className="text-center">
 							<Img

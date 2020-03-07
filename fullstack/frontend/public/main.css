@@ -1,6 +1,9 @@
 body {
 	background-color: #ebedf0;
 }
+.blog-excerpt br {
+	display: none;
+}
 .cover-upload, .avatar-upload {
 	text-align: center;
 }
